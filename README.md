@@ -179,3 +179,16 @@ Feel free to fork, contribute, improve, or suggest features.
 
 MIT License.
 This tool is not affiliated with Zoho Corp.
+
+### Compliance Notes
+
+"Not affiliated with Zoho Corp"
+
+"Users must comply with local data privacy laws (GDPR/CCPA)"
+
+```Markdown
+WARNING: This tool accesses sensitive email data.  
+• Only use on accounts you own  
+• Never extract contacts without permission  
+• Securely delete downloaded attachments after processing
+```
