@@ -88,6 +88,13 @@ Windows PowerShell:
 ```powershell
 $env:ZOHO_CLIENT_ID="your_client_id"
 $env:ZOHO_CLIENT_SECRET="your_client_secret"
+$env:ZOHO_REDIRECT_URI="http://localhost:5000/oauth/callback"
+```
+
+```cmd
+set ZOHO_CLIENT_ID="your_client_id"
+set ZOHO_CLIENT_SECRET="your_client_secret"
+set ZOHO_REDIRECT_URI="http://localhost:5000/oauth/callback"
 ```
 
 ###  Run the Extractor
