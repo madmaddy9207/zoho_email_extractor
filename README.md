@@ -50,7 +50,7 @@ Now it's working perfectly — and open to anyone who wants to use, fork, or con
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/zoho-email-extractor.git
+https://github.com/madmaddy9207/zoho_email_extractor.git
 cd zoho-email-extractor
 ```
 
