@@ -1,123 +1,54 @@
-Here's your `README.md` ready to copy-paste directly into your GitHub repo for the **Zoho Email Extractor** project:
+#  Zoho Email Extractor – by Sysdevcode
+
+This is a simple but powerful Python tool that extracts **email contacts, sender names, subjects, timestamps, and attachments** from your **Zoho Mail inbox** and saves everything into Excel, CSV, and JSON formats — with analytics included.
+
+We built this because our small startup, **Sysdevcode (Kerala, India)**, got over **1000 internship applications** via Zoho Mail — and we had no auto-reply, no filters, and no plan for follow-ups.  
+So, instead of depending on expensive automation tools, we built our own. Now it’s open-source 💚
 
 ---
 
-````markdown
-# 📥 Zoho Email Extractor – by Sysdevcode
+##  Why we created this
 
-A simple Python tool to extract emails, sender names, subjects, and attachments from your **Zoho Mail inbox** — exports all the data to Excel, JSON, and CSV.
+After posting an internship poster, we received 1000+ resumes on Zoho Mail.  
+But we forgot to set any autoresponders or filters 😅
 
-We built this tool after getting **1000+ internship applications** and realizing we had no way to reply or manage them. No auto-reply, no filters, no tools — so we built our own.  
-Now it's open-source. MIT licensed. No fancy GUI. Just works.
+We looked for tools → Most were paid or didn’t fit.  
+We asked AI → It helped, but the logic wasn’t perfect.  
+So we decided to code our own tool from scratch.
+
+Now it's working perfectly — and open to anyone who wants to use, fork, or contribute.
 
 ---
 
-## 🔧 Features
+##  Features
 
-- ✅ OAuth2 login with Zoho
-- 📩 Extract sender email, name, subject, timestamp
-- 📎 Download attachments (PDF, DOCX, XLSX, etc.)
-- 📊 Export to:
-  - Excel with stats & charts
+-  Zoho Mail OAuth2 Authentication (secure)
+-  Extract email addresses, sender names, subjects, and timestamps
+-  Download attachments (PDF, DOCX, XLSX, etc.)
+-  Export reports in:
+  - Excel with stats and domain analytics
   - JSON with full metadata
-  - CSV for bulk email tools
-- 📈 Domain analytics + sender frequency ranking
-- 🕒 Rate-limited (safe for Zoho API)
-- 💾 All attachments saved in `/attachments/sender_email/`
+  - CSV for email marketing tools
+-  Domain-level grouping + sender frequency stats
+-  Rate-limited (safe for Zoho API)
+-  Save attachments by sender in `/attachments/`
 
 ---
 
-## 🛠️ Setup
+##  Technologies Used
 
-### 1. Clone the repo
+- **Python 3.7+**
+- `requests`, `pandas`, `openpyxl`, `logging`
+- Zoho Mail API & OAuth2
+- Local HTTP server for secure OAuth callback
+- `.env` or environment variables for credential handling
+
+---
+
+##  Setup
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/zoho-email-extractor.git
 cd zoho-email-extractor
-````
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Get Zoho OAuth2 credentials
-
-* Go to: [Zoho Developer Console](https://api-console.zoho.in/)
-* Create a client
-* Set redirect URI to: `http://localhost:5000/oauth/callback`
-* Copy your Client ID and Client Secret
-
-### 4. Set environment variables
-
-```bash
-export ZOHO_CLIENT_ID="your_client_id"
-export ZOHO_CLIENT_SECRET="your_client_secret"
-```
-
-You can also add these to a `.env` file.
-
----
-
-## ▶️ Run the script
-
-```bash
-python zoho_email_extractor.py
-```
-
-* Opens browser to authenticate
-* Starts extracting emails from your inbox
-* Saves output to `zoho_email_extraction/` folder
-
----
-
-## 📂 Output Files
-
-| File                   | Description                                             |
-| ---------------------- | ------------------------------------------------------- |
-| `contacts_latest.xlsx` | Main Excel file with contacts, stats & domain analytics |
-| `contacts_latest.json` | Full metadata including timestamps, attachments         |
-| `contacts_latest.csv`  | Clean email list for importing into mail tools          |
-| `/attachments/`        | All saved files from emails, organized by sender        |
-
----
-
-## 🧠 Why we built this
-
-We’re a small startup from Kerala called **Sysdevcode**.
-After our first internship drive, we were flooded with emails and no automation. We searched tools, tried GPT, nothing fit our exact need — so we built this from scratch.
-
-Now it’s open-source so others like us can benefit.
-Not perfect, but it’s clean and works well.
-
----
-
-## 🙌 Contribute
-
-* Found a bug? Open an issue.
-* Want to improve something? PRs welcome.
-* Got a suggestion? Ping us anytime.
-
-> This project is built by @AbinP from **Sysdevcode** – connect on [LinkedIn](https://www.linkedin.com/in/abinp-/)
-
----
-
-## 📜 License
-
-MIT License.
-Not affiliated with Zoho Corp.
-
----
-
-Made with 💻 in Kerala 🇮🇳
-
-```
-
----
-
-Let me know if you want:
-- A `badge section` (stars, license, etc.)
-- Screenshots or a GIF demo for the README
-- Deployment as a PyPI or Docker version
-```
